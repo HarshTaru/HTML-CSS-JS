@@ -1,0 +1,35 @@
+
+*{
+    background-color: purple;
+}
+h1{
+    color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blue p{
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    background-color: yellow;
+}
+
+.blue span{
+    color: green;
+    text-decoration-thickness: 10px;
+    text-transform: capitalize;
+
+}
+
+.myclass{
+    background-color: aquamarine !important;
+    color :antiquewhite;
+}
+
+.myclass :first-child{
+    color:darkblue;
+}
+#id1{
+     color: aqua;
+     animation-direction: left;
+}

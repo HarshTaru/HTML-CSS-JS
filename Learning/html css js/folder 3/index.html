@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        background-color: beige;
+      }
+      body form {
+        color: rgb(4, 4, 43);
+        /* text-align: center; */
+        background-color: rgb(197, 155, 28);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter username"
+      />
+      <label for="checkbox">I accept</label>
+      <input type="checkbox" id="checkbox" name="accept" required />
+      <input type="date" autofocus />
+      <input type="color" />
+      <input type="file" />
+      <input type="email" />
+      <input type="image" />
+      <input type="url" />
+      <input type="month" />
+      <input type="number" style="text-align: center" />
+      <input type="hidden" />
+      <label>Gender:</label>
+      <input type="radio" id="male" name="1" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="1" value="female" />
+      <label for="female">Female</label>
+      <input type="range" value="10" />
+      <input type="reset" />
+      <input type="search" value="google.com" />
+      <input type="submit" value="go" />
+      <input type="week" />
+      <input type="time" />
+      <input type="tel" />
+      <textarea>Enter your comment here</textarea>
+      <select name="fruits">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+      </select>
+    </form>
+  </body>
+</html>

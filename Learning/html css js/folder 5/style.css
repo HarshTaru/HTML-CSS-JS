@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar {
+    background-color: rgb(255, 14, 199);
+    height: 25px;
+    width: 100%;
+    padding: 5px 5px;
+    position: fixed;
+    top:0px;
+    left: 0px;
+  }
+
+  .navbar nav ul li {
+    display: inline;
+    padding: 15px;
+  }
+
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  .box{
+    background-color: rgb(45, 133, 5);
+    height: 275px;
+    padding: 20px 20px 25px 25px;
+    display: flex;
+    margin: 55px 25px;
+    position: static;
+  }
+
+  .box1{
+    background-color: rgb(214, 110, 112);
+    height: 195px;
+    width: 285px;
+    margin:25px;
+    
+  }
+  .box2{
+    background-color: rgb(109, 123, 225);
+    height: 195px;
+    width: 285px;
+    margin:25px;
+
+  }
+  .box3{
+    background-color: black;
+    height: 205px;
+    padding: 35px 35px;
+  }
+
+  .box4{
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 45px;
+    border: 2px solid white;
+    font-size: 60px;
+    text-transform: capitalize;
+    text-overflow: clip;
+    align-items: center;
+  }
+  .circle{
+    background-color: orange;
+    height: 35px;
+    width: 35px;
+    border-radius: 95px;
+    position: fixed;
+    right:10px;
+    top: 400px;
+  }
+
+  .footer{
+    background-color:white;
+    height: 49px;
+    position: relative;
+  }

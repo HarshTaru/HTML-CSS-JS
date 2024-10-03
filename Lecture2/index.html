@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            height: 50vh;
+            border: 1px solid brown;
+            background-color: beige;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items:center;
+            /* align-content: space-evenly; */
+
+        }
+
+        .item{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        #first{
+            background-color: aquamarine;
+            /* align-self: start; */
+            order: 1;
+        }
+
+        #second{
+            background-color: aqua;
+        }
+
+        #third{
+            background-color: blue;
+            /* align-self: start; */
+        }
+
+        #fourth{
+            background-color: blueviolet;
+        }
+
+        #fifth{
+            /* align-self: start; */
+            background-color: darkblue;
+            order:-1
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item" id="first">1</div>
+        <div class="item" id="second">2</div>
+        <div class="item" id="third">3</div>
+        <div class="item" id="fourth">4</div>
+        <div class="item" id="fifth">5</div>
+    </div>
+</body>
+</html>

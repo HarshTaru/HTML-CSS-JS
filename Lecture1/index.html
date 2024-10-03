@@ -1,0 +1,134 @@
+<!-- Objectives
+1.Basic css :(Internal css - <Style> <style> within document
+
+external css - <link:css>  <link rel="stylesheet" href="style.css">
+
+inline css - defined in the element using style tag)
+
+2.size :(px- 0.26 inch 
+%-relative to parent(ancestor) 
+em - relative to parent
+rem -relative to root element
+vw -viewport width
+vh - viewport height)
+
+3.postions :(static- default 
+relative - relative to window , gap maintained
+absolute - relative to parent , gap not maintained  fixed - relative to window , fixed throughout the window 
+sticky - relative to parent , sticky inside the parent)
+
+4.display :(inline - inline elements like span img 
+block - block elements like div p
+ inline-block - to display inline elements as block)
+
+ 5.Box Model :(
+margin : space outside the container
+padding : space inside the container
+border : border of the container
+content)
+
+6.box sizing border box if we set this it means that the container where all the box model properties are defined wont grow it will keep the size of the box fixed and adjust accordingly
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            border: 1px solid brown;
+            background-color: beige;
+            margin: 10px 40px;
+            text-align: center;
+            width: 80%;
+        }
+
+        p{
+            color: brown;
+            margin: 10px 40px;
+            width: 80%;
+            border: 1px solid black;
+            font-size: 25px;
+            font-family: "Edu AU VIC WA NT Hand", cursive;;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        div{
+            /* background-color: brown; */
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-flex;
+            position: relative;
+        }
+
+        .first{
+            background-color: red;
+            /* position: absolute; */
+            /* top:10px; */
+            /* left: 100px; */
+        }
+
+        .second{
+            background-color: blueviolet;
+            position: fixed;
+            /* right: 10px; */
+        }
+
+        .third{
+            background-color: cadetblue;
+            position: sticky;
+        }
+
+        span{
+            border: 2px solid red;
+            margin: 10px;
+            position: relative;
+            left: 30px;
+            background-color: aqua;
+            width: 50%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to HTML</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis sit totam est sunt natus laboriosam, odio non rerum explicabo cumque fuga cum. Commodi, accusantium quisquam hic nemo quo adipisci.</p>
+
+    <span>
+        I am A Span
+    </span>
+
+    <span>
+        I am a Span 2
+    </span>
+
+    <!-- <div class="first">
+        
+    </div>
+
+    <div class="second">
+
+    </div>
+
+    <div class="third">
+
+    </div> -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iusto, aliquid tempore harum unde nobis vel dicta modi voluptatem est alias repellat aspernatur fugiat quos voluptate facilis qui porro hic.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum illum accusamus reprehenderit voluptatem deserunt sapiente, consequatur vitae temporibus veniam, molestias doloribus cumque labore animi iusto assumenda obcaecati rerum tempore beatae. Sapiente deleniti, id delectus velit laboriosam ratione possimus quos, in excepturi impedit veritatis eius fugit accusamus corporis quis voluptates accusantium, dolor neque voluptatem ex? Tenetur, veritatis? Voluptates molestiae distinctio deserunt. Distinctio ullam nobis rem quibusdam facere id accusantium perspiciatis, veniam fuga impedit, similique voluptatum quasi laborum quis facilis ipsam ratione minus officia iste, quam expedita vel. Molestiae fuga, dignissimos quos praesentium quidem quas. Similique iste reprehenderit ut fugit cupiditate. Molestias, consequatur doloribus rem beatae nisi illum rerum earum enim fuga est asperiores placeat reprehenderit, ipsum non voluptas sed recusandae quis magnam incidunt eaque odio modi voluptate ducimus voluptatibus. Doloribus provident assumenda laborum sit fuga quidem omnis sapiente! Hic minus deleniti eos maiores, nostrum obcaecati odit numquam, harum a at quis cupiditate doloribus voluptatem quae dolorem? Odio, quas expedita voluptas enim repellat quaerat ratione molestias iste eligendi. Quidem provident rem et autem delectus ipsa dolores accusamus quam doloremque. Velit voluptatum necessitatibus libero, quo corporis laborum. Odio totam fugiat minus, similique a minima non voluptates cupiditate est perferendis, sequi mollitia omnis.</p>
+</body>
+</html>

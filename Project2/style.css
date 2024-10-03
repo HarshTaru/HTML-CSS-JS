@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right top, #0953c2, #4660bb, #636eb4, #787cac, #8a8ba4);
+}
+header{
+    min-height: 10vh;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    padding: 1em;
+    text-decoration: underline;
+}
+main{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "height heightfield"
+    "weight1 weightfield"
+    "submitbtn submitbtn";
+    row-gap: 2rem;
+    
+}
+main table{
+    margin: 10px 0px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main table tr th{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+main table tr td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+label{
+    color: white;
+}
+#height-label{
+    grid-area: height;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin: 0px 20px;
+}
+
+#height{
+    grid-area: heightfield;
+}
+
+#Weight{
+    grid-area: weightfield;
+}
+
+#weight-label{
+    margin: 0px 20px;
+    grid-area: weight1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+#submitbtn{
+    padding: auto;
+    text-wrap: wrap;
+    grid-area: submitbtn;
+    width: 50%;
+    height: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: auto;
+}
+footer{
+    margin-bottom: 10vh;
+    align-content: center;
+    min-height: 10vh;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p{
+    text-align: center;
+}
+

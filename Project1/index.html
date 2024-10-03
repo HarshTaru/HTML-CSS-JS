@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        width: 100vw;
+        height: 100vh;
+        background-color: darkblue;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas:
+          "item1 item1 item1 item1 item3"
+          "item1 item1 item1 item1 item4"
+          "item2 item2 item2 item2 item2"
+          "item5 item6 item7 item8 item9";
+      }
+
+      .item {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 22px;
+        text-align: center;
+      }
+
+      .item div {
+        background-color: white;
+        height: 100px;
+        width: 100px;
+        rotate: 45deg;
+      }
+
+      .item div span {
+        
+      }
+      #item1 {
+        grid-area: item1;
+      }
+      #item2 {
+        grid-area: item2;
+      }
+      #item3 {
+        grid-area: item3;
+      }
+      #item4 {
+        grid-area: item4;
+      }
+      #item5 {
+        grid-area: item5;
+      }
+      #item6 {
+        grid-area: item6;
+      }
+      #item7 {
+        grid-area: item7;
+      }
+      #item8 {
+        grid-area: item8;
+      }
+      #item9 {
+        grid-area: item9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="item" id="item1">
+        <div><span>1</span></div>
+      </div>
+      <div class="item" id="item2">
+        <div><span>2</span></div>
+      </div>
+      <div class="item" id="item3">
+        <div><span>3</span></div>
+      </div>
+      <div class="item" id="item4">
+        <div><span>4</span></div>
+      </div>
+      <div class="item" id="item5">
+        <div><span>5</span></div>
+      </div>
+      <div class="item" id="item6">
+        <div><span>6</span></div>
+      </div>
+      <div class="item" id="item7">
+        <div><span>7</span></div>
+      </div>
+      <div class="item" id="item8">
+        <div><span>8</span></div>
+      </div>
+      <div class="item" id="item9">
+        <div><span>9</span></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 10%;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+        .center{
+            align-self: center;
+        }
+        #nav{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 10%;
+        }
+        #Feature{
+            height: 30%;
+            background-color: aquamarine;
+            width: 100%;
+            display: flex;
+            justify-content: center;;
+            align-items: center;
+        }
+        #content{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 40%;
+            width: 100%;
+            
+        }
+        #content div{
+            height: 100%;
+            width: 33%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;;
+        }
+        #footer{
+            background-color: burlywood;
+            height: 10%;
+            width: 100%;
+        }
+        @media only screen and (max-width: 768px) {
+            #nav {
+                flex-direction: column;
+            }
+
+            #content {
+                flex-direction: column;
+            }
+            #content div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="center">Logo</div>
+    <div id="nav">
+        <a>Home</a>
+        <a>Products</a>
+        <a>Services</a></a>
+        <a>About</a>
+        <a>Contact</a>
+    </div>
+    <div id ="Feature" class="center">Feature</div>
+    <div id="content" class="center">
+        <div>Column1</div>
+        <div>Column2</div>
+        <div>Column3</div>
+    </div>
+    <div id="footer" class="center">&copy; Copyright 2011</div>
+</body>
+</html>
